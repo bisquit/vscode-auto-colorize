@@ -2,7 +2,7 @@
   "name": "vscode-auto-colorize",
   "displayName": "Auto Colorize",
   "description": "",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "publisher": "bisquit",
   "icon": "assets/icon.png",
