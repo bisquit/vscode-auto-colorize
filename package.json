@@ -24,31 +24,35 @@
     ]
   },
   "scripts": {
-    "vscode:prepublish": "pnpm run esbuild-base --minify",
+    "dev": "pnpm esbuild:watch",
     "esbuild-base": "rimraf dist && esbuild ./src/extension.ts --bundle --outfile=dist/extension.js --external:vscode --format=cjs --platform=node",
     "esbuild": "pnpm run esbuild-base --sourcemap",
     "esbuild:watch": "pnpm run esbuild-base --sourcemap --watch",
     "lint": "eslint \"src/**/*.ts\"",
     "test": "vitest",
     "test:ci": "vitest run",
+    "vscode:prepublish": "pnpm run esbuild-base --minify",
     "vsce:package": "pnpm vsce package --no-dependencies",
     "vsce:publish": "pnpm vsce publish --no-dependencies"
   },
   "devDependencies": {
     "@types/color-hash": "^1.0.2",
     "@types/node": "^18.16.18",
+    "@types/tinycolor2": "^1.4.3",
     "@types/vscode": "^1.79.1",
     "@typescript-eslint/eslint-plugin": "^5.60.1",
     "@typescript-eslint/parser": "^5.60.1",
     "esbuild": "^0.18.10",
     "eslint": "^8.43.0",
+    "eslint-plugin-perfectionist": "^1.4.0",
     "rimraf": "^5.0.1",
     "typescript": "^5.1.5",
     "vitest": "^0.32.2"
   },
   "dependencies": {
     "color-hash": "^2.0.2",
-    "loglevel": "^1.8.1"
+    "loglevel": "^1.8.1",
+    "tinycolor2": "^1.6.0"
   },
   "prettier": {
     "editorconfig": true,
@@ -62,7 +66,8 @@
     ],
     "extends": [
       "eslint:recommended",
-      "plugin:@typescript-eslint/recommended"
+      "plugin:@typescript-eslint/recommended",
+      "plugin:perfectionist/recommended-natural"
     ],
     "rules": {
       "@typescript-eslint/no-unused-vars": 0,

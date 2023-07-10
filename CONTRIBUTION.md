@@ -3,12 +3,14 @@
 ```sh
 pnpm i
 
-pnpm run esbuild:watch
+pnpm dev
 ```
 
 Debug > Run Extension
 
-After modifying, 「Cmd + Shift + P」 > 「Developer: Reload Window」 in extension host window
+Open `DEBUG CONSOLE` (Cmd + Shift + y) to see logs.
+
+After modifying, 「Cmd + Shift + P」 > 「Developer: Reload Window」 in extension host window.
 
 ## publish
 
