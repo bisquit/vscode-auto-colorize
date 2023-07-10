@@ -1,17 +1,17 @@
 import * as vscode from 'vscode';
 
-import { getColorHexFromString, getReadableForeground } from '../utils/color';
-import { hasColorConfig, isMultiRootWorkspace } from '../utils/workspace';
+import { getColorHexFromString, getReadableForeground } from './utils/color';
+import { hasColorConfig, isMultiRootWorkspace } from './utils/workspace';
 
 type Option = {
   /**
-   * Colorize even if workspace already has a color configuration.
+   * Overwrite even if workspace already has a color configuration.
    */
-  overwriteExistingConfig?: boolean;
+  overwriteConfig?: boolean;
 };
 
 export async function colorize({
-  overwriteExistingConfig = false,
+  overwriteConfig: overwriteExistingConfig = false,
 }: Option = {}) {
   const workspace = vscode.workspace;
 
