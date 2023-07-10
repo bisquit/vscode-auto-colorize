@@ -2,8 +2,12 @@
 
 Automatically color your workspace.
 
-Personal alternative of [Peacock](https://github.com/johnpapa/vscode-peacock).
+## Install
 
-## NOTE
+https://marketplace.visualstudio.com/items?itemName=bisquit.vscode-auto-colorize
 
-Be sure to disable Peacock before using this extension, because it removes color configurations that are not via Peacock.
+This extension automatically color title bar when opening `.vscode-workspace`, if it doesn't have color configurations.
+
+## Related
+
+- [Peacock](https://github.com/johnpapa/vscode-peacock)
