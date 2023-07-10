@@ -1,10 +1,11 @@
 {
   "name": "vscode-auto-colorize",
   "displayName": "Auto Colorize",
-  "description": "",
+  "description": "Automatically color your workspace",
   "version": "0.0.3",
   "license": "MIT",
   "publisher": "bisquit",
+  "icon": "assets/icon.png",
   "engines": {
     "vscode": "^1.79.2"
   },
