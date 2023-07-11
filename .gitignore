@@ -22,3 +22,6 @@ dist-ssr
 
 # package
 *.vsix
+
+# vitest coverage
+coverage
