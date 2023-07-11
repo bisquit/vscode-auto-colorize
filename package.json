@@ -93,12 +93,12 @@
           "name": "improve:  Improves feature or performance"
         },
         {
-          "value": "refactor",
-          "name": "refactor: Code refactoring"
-        },
-        {
           "value": "docs",
           "name": "docs:     Documentation only changes"
+        },
+        {
+          "value": "refactor",
+          "name": "refactor: Code refactoring"
         },
         {
           "value": "chore",
