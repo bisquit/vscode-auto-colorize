@@ -1,7 +1,7 @@
 import * as vscode from 'vscode';
 
 import { getColorHexFromString, getReadableForeground } from './utils/color';
-import { hasColorConfig, isMultiRootWorkspace } from './utils/workspace';
+import { hasColorConfig, isMultiRootWorkspace } from './vscode-utils/workspace';
 
 type Option = {
   /**
@@ -22,7 +22,7 @@ export async function colorize({
 
   if ((await hasColorConfig(workspace)) && !overwriteExistingConfig) {
     console.log(
-      'extension ignored, because workspace already has a color configuration.'
+      'extension ignored, because workspace already has a color configuration.',
     );
     return;
   }
@@ -38,7 +38,7 @@ export async function colorize({
       'titleBar.inactiveBackground': bgColor,
       'titleBar.inactiveForeground': fgColor,
     },
-    false
+    false,
   );
 
   vscode.window.showInformationMessage(`Automatically colorized to ${bgColor}`);
