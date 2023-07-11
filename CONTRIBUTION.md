@@ -12,7 +12,17 @@ Open `DEBUG CONSOLE` (Cmd + Shift + y) to see logs.
 
 After modifying, 「Cmd + Shift + P」 > 「Developer: Reload Window」 in extension host window.
 
+## PR
+
+Use `czg` or make sure to prefix type.
+
+```sh
+czg
+```
+
 ## publish
+
+### Manual publish
 
 ```sh
 pnpm add -g @vscode/vsce

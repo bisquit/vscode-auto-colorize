@@ -27,13 +27,13 @@
   },
   "scripts": {
     "dev": "pnpm esbuild:watch",
+    "build": "pnpm run esbuild-base --minify",
     "esbuild-base": "rimraf dist && esbuild ./src/extension.ts --bundle --outfile=dist/extension.js --external:vscode --format=cjs --platform=node",
     "esbuild": "pnpm run esbuild-base --sourcemap",
     "esbuild:watch": "pnpm run esbuild-base --sourcemap --watch",
     "lint": "eslint \"src/**/*.ts\"",
     "test": "vitest",
     "test:ci": "vitest run",
-    "vscode:prepublish": "pnpm run esbuild-base --minify",
     "vsce:package": "pnpm vsce package --no-dependencies",
     "vsce:publish": "pnpm vsce publish --no-dependencies"
   },

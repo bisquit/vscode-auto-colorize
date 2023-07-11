@@ -42,6 +42,9 @@ jobs:
       - name: install vsce
         run: pnpm add -g @vscode/vsce
 
+      - name: build
+        run: pnpm run build
+
       - name: publish
         run: |
           pnpm run vsce:package
