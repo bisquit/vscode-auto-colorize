@@ -2,6 +2,7 @@
   "name": "vscode-auto-colorize",
   "displayName": "Auto Colorize",
   "description": "Automatically color your workspace",
+  "type": "module",
   "version": "0.0.5",
   "license": "MIT",
   "publisher": "bisquit",
@@ -74,6 +75,39 @@
       "@typescript-eslint/no-explicit-any": 0,
       "@typescript-eslint/explicit-module-boundary-types": 0,
       "@typescript-eslint/no-non-null-assertion": 0
+    }
+  },
+  "config": {
+    "commitizen": {
+      "types": [
+        {
+          "value": "feat",
+          "name": "feat:     New feature"
+        },
+        {
+          "value": "fix",
+          "name": "fix:      Bug fix"
+        },
+        {
+          "value": "improve",
+          "name": "improve:  Improves feature or performance"
+        },
+        {
+          "value": "refactor",
+          "name": "refactor: Code refactoring"
+        },
+        {
+          "value": "docs",
+          "name": "docs:     Documentation only changes"
+        },
+        {
+          "value": "chore",
+          "name": "chore:    Other changes that don't modify src or test files"
+        }
+      ],
+      "skipQuestions": [
+        "scope"
+      ]
     }
   },
   "repository": {
