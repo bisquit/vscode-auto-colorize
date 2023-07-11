@@ -35,7 +35,7 @@
     "typecheck": "tsc --noEmit && echo 'Type checking passed!'",
     "validate": "pnpm run lint && pnpm run typecheck",
     "test": "vitest",
-    "test:coverage": "vitest --coverage.enabled --coverage.provider=v8 --coverage.all --coverage.clean --coverage.include=src --coverage.exclude=src/extension.ts",
+    "test:coverage": "vitest --coverage.enabled --coverage.provider=v8 --coverage.all --coverage.clean --coverage.include=src/utils",
     "test:ci": "pnpm run test:coverage --run",
     "vsce:package": "pnpm vsce package --no-dependencies",
     "vsce:publish": "pnpm vsce publish --no-dependencies"

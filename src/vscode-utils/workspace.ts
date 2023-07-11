@@ -1,24 +1,27 @@
 import * as vscode from 'vscode';
 
+type WorkspaceLike = Partial<typeof vscode.workspace>;
+
 const WorkspaceTypes = {
   MultiRoot: 'MultiRoot',
   SingleFolder: 'SingleFolder',
   Unknown: 'Unknown',
 } as const;
 
-export function isMultiRootWorkspace(workspace: typeof vscode.workspace) {
+export function isMultiRootWorkspace(workspace: WorkspaceLike) {
   return detectWorkspaceType(workspace) === WorkspaceTypes.MultiRoot;
 }
 
 export async function hasColorConfig(
-  workspace: typeof vscode.workspace
+  workspace: WorkspaceLike,
 ): Promise<boolean> {
   const { workspaceValue } =
-    workspace.getConfiguration().inspect('workbench.colorCustomizations') ?? {};
+    workspace.getConfiguration?.().inspect('workbench.colorCustomizations') ??
+    {};
   return !!workspaceValue;
 }
 
-function detectWorkspaceType(workspace: typeof vscode.workspace) {
+function detectWorkspaceType(workspace: WorkspaceLike) {
   /**
    * NOTE:
    * `workspace.workspaceFile` is defined only if multi-root workspace.
