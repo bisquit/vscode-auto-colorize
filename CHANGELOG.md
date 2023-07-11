@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.0.7](https://github.com/bisquit/vscode-auto-colorize/compare/v0.0.6...v0.0.7) (2023-07-11)
+
+
+### Documentation
+
+* add command docs ([0fec364](https://github.com/bisquit/vscode-auto-colorize/commit/0fec364bfd056e6d4571a58ad24ca5662b3b6b8e))
+
+
+### Others
+
+* update skipQuestions array in package.json to exclude additional fields ([b777495](https://github.com/bisquit/vscode-auto-colorize/commit/b7774952b1535a488e1a5c163dd1df01d5f0ac6f))
+
 ## [0.0.6](https://github.com/bisquit/vscode-auto-colorize/compare/v0.0.5...v0.0.6) (2023-07-11)
 
 
