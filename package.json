@@ -11,7 +11,10 @@
     "vscode": "^1.79.2"
   },
   "categories": [],
-  "keywords": [],
+  "keywords": [
+    "workspace",
+    "color"
+  ],
   "main": "./dist/extension.js",
   "activationEvents": [
     "onStartupFinished"
