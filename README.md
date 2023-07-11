@@ -8,7 +8,13 @@ Automatically color your workspace.
 
 https://marketplace.visualstudio.com/items?itemName=bisquit.vscode-auto-colorize
 
-This extension automatically color title bar when opening `.vscode-workspace`, if it doesn't have color configurations.
+This extension automatically colors the workspace theme when opening `.vscode-workspace`, if it doesn't have color configurations.
+
+## Commands
+
+| commands                 | description                    | Shortcut |
+| ------------------------ | ------------------------------ | -------- |
+| `Auto Colorize: Recolor` | Force colorize your workspace. |          |
 
 ## Related
 
