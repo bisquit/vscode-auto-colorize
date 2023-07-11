@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.0.7](https://github.com/bisquit/vscode-auto-colorize/compare/v0.0.6...v0.0.7) (2023-07-11)
+
+
+### Documentation
+
+* add command docs ([0fec364](https://github.com/bisquit/vscode-auto-colorize/commit/0fec364bfd056e6d4571a58ad24ca5662b3b6b8e))
+
+
+### Others
+
+* add testing ([5ffea00](https://github.com/bisquit/vscode-auto-colorize/commit/5ffea0048a53765df97e883e3f2be31e88f6dff7))
+* test units ([e04a9ea](https://github.com/bisquit/vscode-auto-colorize/commit/e04a9ea44b04002384299b8eeeb1766c8a1d9986))
+* update skipQuestions array in package.json to exclude additional fields ([b777495](https://github.com/bisquit/vscode-auto-colorize/commit/b7774952b1535a488e1a5c163dd1df01d5f0ac6f))
+
 ## [0.0.6](https://github.com/bisquit/vscode-auto-colorize/compare/v0.0.5...v0.0.6) (2023-07-11)
 
 ### Others
