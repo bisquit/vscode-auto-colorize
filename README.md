@@ -1,5 +1,7 @@
 # vscode-auto-colorize
 
+[![Known Vulnerabilities](https://snyk.io/test/github/bisquit/vscode-auto-colorize/badge.svg)](https://snyk.io/test/github/bisquit/vscode-auto-colorize)
+
 Automatically color your workspace.
 
 ## Install
