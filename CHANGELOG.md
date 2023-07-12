@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.0.8](https://github.com/bisquit/vscode-auto-colorize/compare/v0.0.7...v0.0.8) (2023-07-12)
+
+
+### Documentation
+
+* show how to find configuration ([e357de0](https://github.com/bisquit/vscode-auto-colorize/commit/e357de0c09f28293ca761ca12b0d28ff3780ba4b))
+
+
+### Fixes and Improvements
+
+* module not loaded correctly ([ba49b54](https://github.com/bisquit/vscode-auto-colorize/commit/ba49b549ab3c3a2b311a7775473ab462f5c1c77b))
+
 ## [0.0.7](https://github.com/bisquit/vscode-auto-colorize/compare/v0.0.6...v0.0.7) (2023-07-11)
 
 
