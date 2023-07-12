@@ -1,7 +1,11 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 
-type WorkspaceName = 'multi-root.configured' | 'multi-root.not.configured';
+type WorkspaceName = 'multiroot-configured' | 'multiroot-not-configured';
+
+export function resolveFixture(pathFromFixture: string) {
+  return resolve(__dirname, '../fixtures', pathFromFixture);
+}
 
 export function getWorkspaceFixture(workspaceName: WorkspaceName) {
   return resolve(
@@ -10,12 +14,16 @@ export function getWorkspaceFixture(workspaceName: WorkspaceName) {
   );
 }
 
-export function storeWorkspace(workspaceName: WorkspaceName) {
+export function getFolderFixture(folderName: string) {
+  return resolve(__dirname, `../fixtures/folders/${folderName}`);
+}
+
+export function snapshotFile(filePath: string) {
   let originalContent: string;
 
   before(async () => {
     // store original content
-    const content = await readFile(getWorkspaceFixture(workspaceName), {
+    const content = await readFile(filePath, {
       encoding: 'utf-8',
     });
     originalContent = content;
@@ -24,7 +32,7 @@ export function storeWorkspace(workspaceName: WorkspaceName) {
   after(async () => {
     // reset content
     if (originalContent) {
-      await writeFile(getWorkspaceFixture(workspaceName), originalContent);
+      await writeFile(filePath, originalContent);
     }
   });
 }
@@ -42,5 +50,21 @@ export async function openWorkspace(workspaceName: WorkspaceName) {
   await browser.waitUntil(async () => {
     const title = await (await browser.getWorkbench()).getTitleBar().getTitle();
     return title.includes(workspaceName);
+  });
+}
+
+export async function openFolder(folderName: string) {
+  const folder = getFolderFixture(folderName);
+
+  await browser.executeWorkbench((vscode, folder) => {
+    vscode.commands.executeCommand(
+      'vscode.openFolder',
+      vscode.Uri.parse(folder),
+    );
+  }, folder);
+
+  await browser.waitUntil(async () => {
+    const title = await (await browser.getWorkbench()).getTitleBar().getTitle();
+    return title.includes(folderName);
   });
 }

@@ -26,7 +26,7 @@ export const config: Options.Testrunner = {
   exclude: [],
   framework: 'mocha',
   logLevel: 'info',
-  maxInstances: 10,
+  maxInstancesPerCapability: 1,
   mochaOpts: {
     timeout: 60000,
     ui: 'bdd',

@@ -3,13 +3,20 @@ import { readFile, writeFile } from 'node:fs/promises';
 import { join, resolve } from 'node:path';
 import { TextEditor } from 'wdio-vscode-service';
 
-import { getWorkspaceFixture, openWorkspace, storeWorkspace } from './utils';
+import {
+  getWorkspaceFixture,
+  openWorkspace,
+  resolveFixture,
+  snapshotFile,
+} from './utils';
 
-describe('multi-root workspace', () => {
-  describe('no color config', () => {
-    const workspaceName = 'multi-root.not.configured';
+describe('multi-root', () => {
+  describe('not configured', () => {
+    const workspaceName = 'multiroot-not-configured';
 
-    storeWorkspace(workspaceName);
+    snapshotFile(
+      resolveFixture('workspaces/multiroot-not-configured.code-workspace'),
+    );
 
     it('should be colorized', async () => {
       await openWorkspace(workspaceName);
@@ -22,13 +29,8 @@ describe('multi-root workspace', () => {
         .openEditor(`${workspaceName}.code-workspace`)) as TextEditor;
       const text = await textEditor.getText();
 
-      await expect(text.includes('"titleBar.activeBackground"')).toBe(true);
-      await expect(text.includes('"titleBar.activeForeground"')).toBe(true);
-    });
-
-    after(async () => {
-      const workbench = await browser.getWorkbench();
-      await workbench.executeCommand('Close Workspace');
+      expect(text.includes('"titleBar.activeBackground"')).toBe(true);
+      expect(text.includes('"titleBar.activeForeground"')).toBe(true);
     });
   });
 });
