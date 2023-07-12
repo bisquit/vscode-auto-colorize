@@ -2,7 +2,6 @@
   "name": "vscode-auto-colorize",
   "displayName": "Auto Colorize",
   "description": "Automatically color your workspace",
-  "type": "module",
   "version": "0.0.7",
   "license": "MIT",
   "publisher": "bisquit",
