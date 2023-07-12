@@ -9,7 +9,7 @@ describe('VS Code Extension Testing', () => {
   before(async () => {
     // store original content
     const content = await readFile(
-      resolve(__dirname, '../../fixtures/workspaces/multi-root.code-workspace'),
+      resolve(__dirname, '../fixtures/workspaces/multi-root.code-workspace'),
       { encoding: 'utf-8' },
     );
     originalContent = content;
@@ -18,7 +18,7 @@ describe('VS Code Extension Testing', () => {
   it('should be colorized', async () => {
     const workspaceFile = resolve(
       __dirname,
-      '../../fixtures/workspaces/multi-root.code-workspace',
+      '../fixtures/workspaces/multi-root.code-workspace',
     );
     await browser.executeWorkbench((vscode, workspaceFile) => {
       vscode.commands.executeCommand(
@@ -42,10 +42,7 @@ describe('VS Code Extension Testing', () => {
     // reset content
     if (originalContent) {
       await writeFile(
-        resolve(
-          __dirname,
-          '../../fixtures/workspaces/multi-root.code-workspace',
-        ),
+        resolve(__dirname, '../fixtures/workspaces/multi-root.code-workspace'),
         originalContent,
       );
     }
