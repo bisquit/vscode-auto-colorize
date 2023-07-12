@@ -18,9 +18,6 @@ export const config: Options.Testrunner = {
       browserVersion: 'stable',
       'wdio:vscodeOptions': {
         extensionPath: resolve(__dirname, '..'),
-        userSettings: {
-          'editor.fontSize': 14,
-        },
       },
     },
   ],
@@ -37,6 +34,6 @@ export const config: Options.Testrunner = {
   reporters: ['spec'],
   runner: 'local',
   services: ['vscode'],
-  specs: ['./specs/**/*.ts'],
+  specs: ['./specs/**/*.e2e.ts'],
   waitforTimeout: 10000,
 };

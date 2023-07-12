@@ -3,10 +3,10 @@
     "moduleResolution": "node",
     "module": "commonjs",
     "types": [
-      "node",
       "@wdio/globals/types",
-      "expect-webdriverio",
       "@wdio/mocha-framework",
+      "expect-webdriverio",
+      "node",
       "wdio-vscode-service"
     ],
     "target": "es2022"
