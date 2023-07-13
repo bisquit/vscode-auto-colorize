@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.9](https://github.com/bisquit/vscode-auto-colorize/compare/v0.0.8...v0.0.9) (2023-07-13)
+
+
+### Others
+
+* e2e ([#9](https://github.com/bisquit/vscode-auto-colorize/issues/9)) ([febfd9f](https://github.com/bisquit/vscode-auto-colorize/commit/febfd9ff29ed022e5eb7ebc5f3f1cae35d153e2a))
+
 ## [0.0.8](https://github.com/bisquit/vscode-auto-colorize/compare/v0.0.7...v0.0.8) (2023-07-12)
 
 
