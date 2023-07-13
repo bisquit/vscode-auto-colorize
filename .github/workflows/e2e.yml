@@ -26,4 +26,6 @@ jobs:
         run: pnpm build
 
       - name: e2e
-        run: pnpm e2e
+        uses: coactions/setup-xvfb@v1
+        with:
+          run: pnpm e2e
