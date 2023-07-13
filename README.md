@@ -5,6 +5,8 @@
 
 Automatically color your workspace.
 
+![demo](./assets/demo.gif)
+
 ## Install
 
 https://marketplace.visualstudio.com/items?itemName=bisquit.vscode-auto-colorize
