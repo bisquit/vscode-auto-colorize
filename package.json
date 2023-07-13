@@ -7,7 +7,7 @@
   "publisher": "bisquit",
   "icon": "assets/icon.png",
   "engines": {
-    "vscode": "^1.79.2"
+    "vscode": "^1.80.0"
   },
   "categories": [],
   "keywords": [
@@ -39,6 +39,7 @@
     "test": "vitest",
     "test:coverage": "vitest --coverage.enabled --coverage.provider=v8 --coverage.all --coverage.clean --coverage.include=src/utils",
     "test:ci": "pnpm run test:coverage --run",
+    "e2e": "pnpm --filter e2e wdio",
     "vsce:package": "pnpm vsce package --no-dependencies",
     "vsce:publish": "pnpm vsce publish --no-dependencies"
   },

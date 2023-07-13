@@ -1,0 +1,46 @@
+name: E2E
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      - uses: actions/setup-node@v3
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'pnpm'
+
+      - name: install
+        run: pnpm i
+
+      - name: build
+        run: pnpm build
+
+      - name: restore vscode
+        id: cache-vscode-restore
+        uses: actions/cache/restore@v3
+        with:
+          path: |
+            ./e2e/.wdio-vscode-service
+          key: ${{ runner.os }}-vscode-1.80.0
+
+      - name: e2e
+        uses: coactions/setup-xvfb@v1
+        with:
+          run: pnpm e2e
+
+      - name: cache vscode
+        id: cache-vscode
+        uses: actions/cache/save@v3
+        with:
+          path: |
+            ./e2e/.wdio-vscode-service
+          key: ${{ steps.cache-vscode-restore.outputs.cache-primary-key }}

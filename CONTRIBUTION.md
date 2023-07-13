@@ -24,6 +24,11 @@ pnpm test
 pnpm validate
 ```
 
+```sh
+# e2e
+pnpm e2e
+```
+
 ## PR
 
 Use `czg` or make sure to prefix type.
