@@ -1,21 +1,16 @@
 import { readFile, writeFile } from 'node:fs/promises';
-import { resolve } from 'node:path';
-
-type WorkspaceName = 'multiroot-configured' | 'multiroot-not-configured';
+import { basename, resolve } from 'node:path';
 
 export function resolveFixture(pathFromFixture: string) {
   return resolve(__dirname, '../fixtures', pathFromFixture);
 }
 
-export function getWorkspaceFixture(workspaceName: WorkspaceName) {
-  return resolve(
-    __dirname,
-    `../fixtures/workspaces/${workspaceName}.code-workspace`,
-  );
+export function getBasenameFromPath(path: string) {
+  return basename(path);
 }
 
-export function getFolderFixture(folderName: string) {
-  return resolve(__dirname, `../fixtures/folders/${folderName}`);
+export function getWorkspaceNameFromPath(path: string) {
+  return basename(path, '.code-workspace');
 }
 
 export function snapshotFile(filePath: string) {
@@ -37,9 +32,7 @@ export function snapshotFile(filePath: string) {
   });
 }
 
-export async function openWorkspace(workspaceName: WorkspaceName) {
-  const workspaceFile = getWorkspaceFixture(workspaceName);
-
+export async function openWorkspace(workspaceFile: string) {
   await browser.executeWorkbench((vscode, workspaceFile) => {
     vscode.commands.executeCommand(
       'vscode.openFolder',
@@ -47,15 +40,14 @@ export async function openWorkspace(workspaceName: WorkspaceName) {
     );
   }, workspaceFile);
 
+  const workspaceName = getWorkspaceNameFromPath(workspaceFile);
   await browser.waitUntil(async () => {
     const title = await (await browser.getWorkbench()).getTitleBar().getTitle();
     return title.includes(workspaceName);
   });
 }
 
-export async function openFolder(folderName: string) {
-  const folder = getFolderFixture(folderName);
-
+export async function openFolder(folder: string) {
   await browser.executeWorkbench((vscode, folder) => {
     vscode.commands.executeCommand(
       'vscode.openFolder',
@@ -63,6 +55,7 @@ export async function openFolder(folderName: string) {
     );
   }, folder);
 
+  const folderName = getBasenameFromPath(folder);
   await browser.waitUntil(async () => {
     const title = await (await browser.getWorkbench()).getTitleBar().getTitle();
     return title.includes(folderName);

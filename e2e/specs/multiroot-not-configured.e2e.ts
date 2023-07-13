@@ -1,10 +1,8 @@
 import { browser } from '@wdio/globals';
-import { readFile, writeFile } from 'node:fs/promises';
-import { join, resolve } from 'node:path';
 import { TextEditor } from 'wdio-vscode-service';
 
 import {
-  getWorkspaceFixture,
+  getBasenameFromPath,
   openWorkspace,
   resolveFixture,
   snapshotFile,
@@ -12,21 +10,21 @@ import {
 
 describe('multi-root', () => {
   describe('not configured', () => {
-    const workspaceName = 'multiroot-not-configured';
-
-    snapshotFile(
-      resolveFixture('workspaces/multiroot-not-configured.code-workspace'),
+    const workspaceFile = resolveFixture(
+      'workspaces/multiroot-not-configured.code-workspace',
     );
 
+    snapshotFile(workspaceFile);
+
     it('should be colorized', async () => {
-      await openWorkspace(workspaceName);
+      await openWorkspace(workspaceFile);
 
       const workbench = await browser.getWorkbench();
 
       await workbench.executeCommand('Open Workspace Configuration File');
       const textEditor = (await workbench
         .getEditorView()
-        .openEditor(`${workspaceName}.code-workspace`)) as TextEditor;
+        .openEditor(getBasenameFromPath(workspaceFile))) as TextEditor;
       const text = await textEditor.getText();
 
       expect(text.includes('"titleBar.activeBackground"')).toBe(true);

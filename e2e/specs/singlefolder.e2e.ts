@@ -4,10 +4,12 @@ import { TextEditor } from 'wdio-vscode-service';
 import { openFolder, resolveFixture, snapshotFile } from './utils';
 
 describe('singlefolder', () => {
+  const folder = resolveFixture('folders/a');
+
   snapshotFile(resolveFixture('folders/a/.vscode/settings.json'));
 
   it('should not be colorized', async () => {
-    await openFolder('a');
+    await openFolder(folder);
 
     const workbench = await browser.getWorkbench();
 
@@ -19,6 +21,7 @@ describe('singlefolder', () => {
       .getEditorView()
       .openEditor('settings.json')) as TextEditor;
     const text = await textEditor.getText();
+
     expect(text.includes('{}')).toBe(true);
     expect(text.includes('"titleBar.activeBackground"')).toBe(false);
   });

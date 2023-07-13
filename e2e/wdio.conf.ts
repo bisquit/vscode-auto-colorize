@@ -2,6 +2,7 @@ import type { Options } from '@wdio/types';
 
 import { resolve } from 'node:path';
 
+// https://webdriver.io/docs/configurationfile/
 export const config: Options.Testrunner = {
   autoCompileOpts: {
     autoCompile: true,
@@ -17,6 +18,7 @@ export const config: Options.Testrunner = {
       browserName: 'vscode',
       browserVersion: 'stable',
       'wdio:vscodeOptions': {
+        // specify extension path that includes `package.json`
         extensionPath: resolve(__dirname, '..'),
       },
     },
@@ -25,7 +27,9 @@ export const config: Options.Testrunner = {
   connectionRetryTimeout: 120000,
   exclude: [],
   framework: 'mocha',
-  logLevel: 'info',
+  // less info to more easily see spec result
+  logLevel: 'warn',
+  // avoid manipulation conflict
   maxInstancesPerCapability: 1,
   mochaOpts: {
     timeout: 60000,
@@ -34,6 +38,7 @@ export const config: Options.Testrunner = {
   reporters: ['spec'],
   runner: 'local',
   services: ['vscode'],
+  // specify spec path
   specs: ['./specs/**/*.e2e.ts'],
   waitforTimeout: 10000,
 };
