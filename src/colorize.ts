@@ -15,8 +15,6 @@ export async function colorize({
 }: Option = {}) {
   const workspace = vscode.workspace;
 
-  vscode.window.showInformationMessage('Start colorize');
-
   if (!isMultiRootWorkspace(workspace)) {
     console.log('extension ignored, as this is not a multi-root workspace.');
     return;
