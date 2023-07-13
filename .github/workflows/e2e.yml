@@ -22,5 +22,8 @@ jobs:
       - name: install
         run: pnpm i
 
+      - name: build
+        run: pnpm build
+
       - name: e2e
         run: pnpm e2e
