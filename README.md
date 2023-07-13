@@ -1,5 +1,6 @@
 # vscode-auto-colorize
 
+[![E2E](https://github.com/bisquit/vscode-auto-colorize/actions/workflows/e2e.yml/badge.svg)](https://github.com/bisquit/vscode-auto-colorize/actions/workflows/e2e.yml)
 [![Known Vulnerabilities](https://snyk.io/test/github/bisquit/vscode-auto-colorize/badge.svg)](https://snyk.io/test/github/bisquit/vscode-auto-colorize)
 
 Automatically color your workspace.
