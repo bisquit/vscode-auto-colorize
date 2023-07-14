@@ -6,7 +6,7 @@
 Automatically color your workspace.
 
 <div align="center">
-  <img src="./assets/demo.gif" width="60%" />
+  <img src="./assets/screenshot.jpeg" width="60%" />
   <p><i>Example</i></p>
 </div>
 
