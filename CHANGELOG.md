@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.10](https://github.com/bisquit/vscode-auto-colorize/compare/v0.0.9...v0.0.10) (2023-07-15)
+
+
+### Others
+
+* **deps:** update all non-major dependencies ([#12](https://github.com/bisquit/vscode-auto-colorize/issues/12)) ([2a0d91f](https://github.com/bisquit/vscode-auto-colorize/commit/2a0d91f827e7e60ec112350afa5dcfcbdc20e219))
+* **deps:** update typescript-eslint monorepo to v6 (major) ([#13](https://github.com/bisquit/vscode-auto-colorize/issues/13)) ([43483a7](https://github.com/bisquit/vscode-auto-colorize/commit/43483a71b3add97c62ac42d323c521b2a41d5712))
+
 ## [0.0.9](https://github.com/bisquit/vscode-auto-colorize/compare/v0.0.8...v0.0.9) (2023-07-13)
 
 
