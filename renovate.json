@@ -12,9 +12,10 @@
   },
   "packageRules": [
     {
-      "matchPackageNames": ["vscode"],
+      "description": "Don't bump engines field in package.json",
+      "matchPackageNames": ["node", "vscode"],
       "matchDepTypes": [ "engines" ],
-      "dependencyDashboardApproval": true
+      "rangeStrategy": "auto"
     }
   ]
 }
