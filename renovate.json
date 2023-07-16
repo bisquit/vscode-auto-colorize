@@ -9,5 +9,12 @@
   "platformAutomerge": true,
   "major": {
     "labels": ["major"] 
-  }
+  },
+  "packageRules": [
+    {
+      "matchPackageNames": ["vscode"],
+      "matchDepTypes": [ "engines" ],
+      "dependencyDashboardApproval": true
+    }
+  ]
 }
