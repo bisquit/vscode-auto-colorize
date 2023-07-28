@@ -79,8 +79,8 @@ importers:
         specifier: ^8.10.4
         version: 8.10.4
       chromedriver:
-        specifier: ^114.0.3
-        version: 114.0.3
+        specifier: ^115.0.0
+        version: 115.0.0
       ts-node:
         specifier: ^10.9.1
         version: 10.9.1(@types/node@18.17.0)(typescript@5.1.6)
@@ -89,7 +89,7 @@ importers:
         version: 5.1.6
       wdio-vscode-service:
         specifier: ^5.2.1
-        version: 5.2.1(@wdio/types@8.10.4)(chromedriver@114.0.3)(webdriverio@8.13.10)
+        version: 5.2.1(@wdio/types@8.10.4)(chromedriver@115.0.0)(webdriverio@8.13.10)
 
 packages:
 
@@ -1913,8 +1913,8 @@ packages:
       - supports-color
     dev: true
 
-  /chromedriver@114.0.3:
-    resolution: {integrity: sha512-Qy5kqsAUrCDwpovM5pIWFkb3X3IgJLoorigwFEDgC1boL094svny3N7yw06marJHAuyX4CE/hhd25RarIcKvKg==}
+  /chromedriver@115.0.0:
+    resolution: {integrity: sha512-mkPL+sXMLMUenoXCiKREw+cBl3ibfhiWxkiv9ByIPpqtrrInCt9zKdOolAsbmN/ndlH51WtT5ukUKbeRdrpikg==}
     engines: {node: '>=16'}
     hasBin: true
     requiresBuild: true
@@ -5770,7 +5770,7 @@ packages:
       defaults: 1.0.4
     dev: true
 
-  /wdio-chromedriver-service@8.1.1(@wdio/types@8.10.4)(chromedriver@114.0.3)(webdriverio@8.13.10):
+  /wdio-chromedriver-service@8.1.1(@wdio/types@8.10.4)(chromedriver@115.0.0)(webdriverio@8.13.10):
     resolution: {integrity: sha512-pN3GiOkTIMnalfq4PJAHdX95pDp1orHnTY8W1fIbd6ok81ba97UjerTgS7lUDRUh1p0MAm35Ww0uc0/9wzB7SA==}
     engines: {node: ^16.13 || >=18}
     peerDependencies:
@@ -5785,7 +5785,7 @@ packages:
     dependencies:
       '@wdio/logger': 8.11.0
       '@wdio/types': 8.10.4
-      chromedriver: 114.0.3
+      chromedriver: 115.0.0
       fs-extra: 11.1.1
       split2: 4.2.0
       tcp-port-used: 1.0.2
@@ -5794,7 +5794,7 @@ packages:
       - supports-color
     dev: true
 
-  /wdio-vscode-service@5.2.1(@wdio/types@8.10.4)(chromedriver@114.0.3)(webdriverio@8.13.10):
+  /wdio-vscode-service@5.2.1(@wdio/types@8.10.4)(chromedriver@115.0.0)(webdriverio@8.13.10):
     resolution: {integrity: sha512-euDKSEtntuIW2RY9M0aB0or70mDToVjtUEOPwDAz1BFTrmlt9CwcURklRxy2V8RkFM8DnddQCE3oU97fFjzxhw==}
     engines: {node: ^16.13 || >=18}
     peerDependencies:
@@ -5809,7 +5809,7 @@ packages:
       '@types/ws': 8.5.5
       '@vscode/test-electron': 2.3.3
       '@wdio/logger': 8.11.0
-      chromedriver: 114.0.3
+      chromedriver: 115.0.0
       clipboardy: 3.0.0
       decamelize: 6.0.0
       download: 8.0.0
@@ -5819,7 +5819,7 @@ packages:
       tmp-promise: 3.0.3
       undici: 5.22.1
       vscode-uri: 3.0.7
-      wdio-chromedriver-service: 8.1.1(@wdio/types@8.10.4)(chromedriver@114.0.3)(webdriverio@8.13.10)
+      wdio-chromedriver-service: 8.1.1(@wdio/types@8.10.4)(chromedriver@115.0.0)(webdriverio@8.13.10)
       webdriverio: 8.13.10(typescript@5.1.6)
       ws: 8.13.0
       yargs-parser: 21.1.1
