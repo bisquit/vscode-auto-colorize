@@ -4,7 +4,7 @@
     "wdio": "wdio run ./wdio.conf.ts"
   },
   "devDependencies": {
-    "@wdio/cli": "^8.13.13",
+    "@wdio/cli": "^8.13.14",
     "@wdio/globals": "^8.13.13",
     "@wdio/local-runner": "^8.13.13",
     "@wdio/mocha-framework": "^8.13.13",
