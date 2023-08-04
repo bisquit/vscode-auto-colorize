@@ -16,6 +16,11 @@
       "matchPackageNames": ["node", "vscode"],
       "matchDepTypes": [ "engines" ],
       "rangeStrategy": "auto"
+    },
+    {
+      "description": "Group all dependencies from the e2e directory",
+      "matchFileNames": ["e2e/**"],
+      "groupName": "E2E dependencies"
     }
   ]
 }
