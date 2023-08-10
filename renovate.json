@@ -1,6 +1,11 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base", ":timezone(Asia/Tokyo)", ":automergeMinor", "group:allNonMajor"],
+  "extends": [
+    "config:base",
+    ":timezone(Asia/Tokyo)",
+    ":automergeMinor",
+    "group:allNonMajor"
+  ],
   "enabledManagers": ["npm"],
   "reviewers": ["bisquit"],
   "labels": ["dependencies"],
@@ -8,13 +13,18 @@
   "minimumReleaseAge": "3 days",
   "platformAutomerge": true,
   "major": {
-    "labels": ["major"] 
+    "labels": ["major"]
   },
   "packageRules": [
     {
       "description": "Don't bump engines field in package.json",
       "matchPackageNames": ["node", "vscode"],
-      "matchDepTypes": [ "engines" ],
+      "matchDepTypes": ["engines"],
+      "rangeStrategy": "auto"
+    },
+    {
+      "description": "Don't bump @types/vscode",
+      "matchPackageNames": ["@types/vscode"],
       "rangeStrategy": "auto"
     },
     {
