@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.0.13](https://github.com/bisquit/vscode-auto-colorize/compare/v0.0.12...v0.0.13) (2023-08-10)
+
+
+### Fixes and Improvements
+
+* vscode type ([88eb8f4](https://github.com/bisquit/vscode-auto-colorize/commit/88eb8f476bd5c70dc31040cac31bed9c4d4ef959))
+
+
+### Others
+
+* dont bump types vscode ([c120d53](https://github.com/bisquit/vscode-auto-colorize/commit/c120d53a6e1e8e4faacc7b0ab83f0f91c6e95ba5))
+
 ## [0.0.12](https://github.com/bisquit/vscode-auto-colorize/compare/v0.0.11...v0.0.12) (2023-08-10)
 
 
