@@ -28,9 +28,10 @@
       "rangeStrategy": "auto"
     },
     {
-      "description": "Group all dependencies from the e2e directory",
+      "description": "Group all dependencies from the e2e directory, and ignore (as new version of @wdio/types has issues)",
       "matchFileNames": ["e2e/**"],
-      "groupName": "E2E dependencies"
+      "groupName": "E2E dependencies",
+      "enabled": false
     }
   ]
 }
