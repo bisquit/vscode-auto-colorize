@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.0.14](https://github.com/bisquit/vscode-auto-colorize/compare/v0.0.13...v0.0.14) (2023-08-25)
+
+
+### Others
+
+* **deps:** update all non-major dependencies ([#52](https://github.com/bisquit/vscode-auto-colorize/issues/52)) ([ec504bf](https://github.com/bisquit/vscode-auto-colorize/commit/ec504bfd1da7212c8464c4fe547238ed1f69d092))
+* **deps:** update all non-major dependencies ([#56](https://github.com/bisquit/vscode-auto-colorize/issues/56)) ([f631caf](https://github.com/bisquit/vscode-auto-colorize/commit/f631caf1d65583b627b2fa8d220c8be190291e85))
+* **deps:** update all non-major dependencies to ^0.34.2 ([#62](https://github.com/bisquit/vscode-auto-colorize/issues/62)) ([07aa233](https://github.com/bisquit/vscode-auto-colorize/commit/07aa2337dc1c0d2042be4859696a338d9101cfb1))
+* **deps:** update all non-major dependencies to ^6.4.0 ([#60](https://github.com/bisquit/vscode-auto-colorize/issues/60)) ([3805b58](https://github.com/bisquit/vscode-auto-colorize/commit/3805b5885fc5203b8ac6f45deaac2672e31b72aa))
+* **deps:** update all non-major dependencies to ^6.4.1 ([#64](https://github.com/bisquit/vscode-auto-colorize/issues/64)) ([f4e44a0](https://github.com/bisquit/vscode-auto-colorize/commit/f4e44a04c3fa23fba5b0d4c66e1194ae1c22997c))
+* **deps:** update dependency @types/node to ^18.17.4 ([#55](https://github.com/bisquit/vscode-auto-colorize/issues/55)) ([a4e7c36](https://github.com/bisquit/vscode-auto-colorize/commit/a4e7c3643fd853670968e091ab28bd06b35f93fa))
+* **deps:** update dependency @types/node to ^18.17.6 ([#63](https://github.com/bisquit/vscode-auto-colorize/issues/63)) ([80f60a7](https://github.com/bisquit/vscode-auto-colorize/commit/80f60a7f11140497c6afa12ffeecb51aa49cf474))
+* **deps:** update dependency @types/node to ^18.17.7 ([#65](https://github.com/bisquit/vscode-auto-colorize/issues/65)) ([a2bf4e4](https://github.com/bisquit/vscode-auto-colorize/commit/a2bf4e436e89fdea8cc286a5e50be0b4b9d90202))
+* **deps:** update dependency esbuild to ^0.19.0 ([#54](https://github.com/bisquit/vscode-auto-colorize/issues/54)) ([3cb8769](https://github.com/bisquit/vscode-auto-colorize/commit/3cb8769a932afa7d541c01e95cf29b85c39636a5))
+* **deps:** update dependency esbuild to ^0.19.2 ([#59](https://github.com/bisquit/vscode-auto-colorize/issues/59)) ([f07ea8d](https://github.com/bisquit/vscode-auto-colorize/commit/f07ea8d100de039411736a7fb4eefb00eb7c583a))
+* **deps:** update dependency prettier to ^3.0.2 ([#61](https://github.com/bisquit/vscode-auto-colorize/issues/61)) ([af2ab47](https://github.com/bisquit/vscode-auto-colorize/commit/af2ab47045f55bf95f9ca5d4a5fd0987759a5654))
+
 ## [0.0.13](https://github.com/bisquit/vscode-auto-colorize/compare/v0.0.12...v0.0.13) (2023-08-10)
 
 
