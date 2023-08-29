@@ -1,5 +1,6 @@
 # vscode-auto-colorize
 
+<a href="https://marketplace.visualstudio.com/items?itemName=bisquit.vscode-auto-colorize"><img src="https://img.shields.io/visual-studio-marketplace/v/bisquit.vscode-auto-colorize?color=blue"></a>
 [![E2E](https://github.com/bisquit/vscode-auto-colorize/actions/workflows/e2e.yml/badge.svg)](https://github.com/bisquit/vscode-auto-colorize/actions/workflows/e2e.yml)
 [![Known Vulnerabilities](https://snyk.io/test/github/bisquit/vscode-auto-colorize/badge.svg)](https://snyk.io/test/github/bisquit/vscode-auto-colorize)
 
