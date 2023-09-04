@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.15](https://github.com/bisquit/vscode-auto-colorize/compare/v0.0.14...v0.0.15) (2023-09-04)
+
+
+### Documentation
+
+* modify README ([107ff59](https://github.com/bisquit/vscode-auto-colorize/commit/107ff59aa43b6b756f1494df78b09f268cea9011))
+
 ## [0.0.14](https://github.com/bisquit/vscode-auto-colorize/compare/v0.0.13...v0.0.14) (2023-08-25)
 
 
