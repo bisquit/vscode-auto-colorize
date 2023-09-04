@@ -25,6 +25,11 @@ If you want to find what was configured, type `Cmd + Shift + P` > `Workspaces: O
 | ------------------------ | ------------------------------------ | -------- |
 | `Auto Colorize: Recolor` | Force colorize your workspace again. |          |
 
+## See also
+
+- [codew](https://github.com/bisquit/codew-cli)
+  - Open folder as a vscode workspace
+
 ## Related
 
 - [Peacock](https://github.com/johnpapa/vscode-peacock)
