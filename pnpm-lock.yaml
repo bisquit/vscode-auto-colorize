@@ -19,8 +19,8 @@ importers:
         specifier: ^1.0.2
         version: 1.0.2
       '@types/node':
-        specifier: ^18.18.0
-        version: 18.18.0
+        specifier: ^18.18.1
+        version: 18.18.1
       '@types/tinycolor2':
         specifier: ^1.4.4
         version: 1.4.4
@@ -61,20 +61,20 @@ importers:
   e2e:
     devDependencies:
       '@wdio/cli':
-        specifier: ^8.16.16
+        specifier: ^8.16.17
         version: 8.16.17(typescript@5.2.2)
       '@wdio/globals':
-        specifier: ^8.16.16
+        specifier: ^8.16.17
         version: 8.16.17(typescript@5.2.2)
       '@wdio/local-runner':
-        specifier: ^8.16.16
+        specifier: ^8.16.17
         version: 8.16.17(typescript@5.2.2)
       '@wdio/mocha-framework':
-        specifier: ^8.16.15
+        specifier: ^8.16.17
         version: 8.16.17
       '@wdio/spec-reporter':
-        specifier: ^8.16.12
-        version: 8.16.12
+        specifier: ^8.16.17
+        version: 8.16.17
       '@wdio/types':
         specifier: ^8.16.12
         version: 8.16.12
@@ -83,7 +83,7 @@ importers:
         version: 115.0.1
       ts-node:
         specifier: ^10.9.1
-        version: 10.9.1(@types/node@18.18.0)(typescript@5.2.2)
+        version: 10.9.1(@types/node@18.18.1)(typescript@5.2.2)
       typescript:
         specifier: ^5.2.2
         version: 5.2.2
@@ -690,7 +690,7 @@ packages:
       '@jest/schemas': 29.6.0
       '@types/istanbul-lib-coverage': 2.0.4
       '@types/istanbul-reports': 3.0.1
-      '@types/node': 18.18.0
+      '@types/node': 18.18.1
       '@types/yargs': 17.0.24
       chalk: 4.1.2
     dev: true
@@ -911,15 +911,15 @@ packages:
   /@types/keyv@3.1.4:
     resolution: {integrity: sha512-BQ5aZNSCpj7D6K2ksrRCTmKRLEpnPvWDiLPfoGyhZ++8YtiK9d/3DBKPJgry359X/P1PfruyYwvnvwFjuEiEIg==}
     dependencies:
-      '@types/node': 18.18.0
+      '@types/node': 18.18.1
     dev: true
 
   /@types/mocha@10.0.1:
     resolution: {integrity: sha512-/fvYntiO1GeICvqbQ3doGDIP97vWmvFt83GKguJ6prmQM2iXZfFcq6YE8KteFyRtX2/h5Hf91BYvPodJKFYv5Q==}
     dev: true
 
-  /@types/node@18.18.0:
-    resolution: {integrity: sha512-3xA4X31gHT1F1l38ATDIL9GpRLdwVhnEFC8Uikv5ZLlXATwrCYyPq7ZWHxzxc3J/30SUiwiYT+bQe0/XvKlWbw==}
+  /@types/node@18.18.1:
+    resolution: {integrity: sha512-3G42sxmm0fF2+Vtb9TJQpnjmP+uKlWvFa8KoEGquh4gqRmoUG/N0ufuhikw6HEsdG2G2oIKhog1GCTfz9v5NdQ==}
     dev: true
 
   /@types/node@20.4.1:
@@ -933,7 +933,7 @@ packages:
   /@types/responselike@1.0.0:
     resolution: {integrity: sha512-85Y2BjiufFzaMIlvJDvTTB8Fxl2xfLo4HgmHzVBz08w4wDePCTjYw66PdrolO0kzli3yam/YCgRufyo1DdQVTA==}
     dependencies:
-      '@types/node': 18.18.0
+      '@types/node': 18.18.1
     dev: true
 
   /@types/semver@7.5.0:
@@ -961,7 +961,7 @@ packages:
   /@types/ws@8.5.5:
     resolution: {integrity: sha512-lwhs8hktwxSjf9UaZ9tG5M03PGogvFaH8gUgLNbN9HKIg0dvv6q+gkSuJ8HN4/VbyxkuLzCjlN7GquQ0gUJfIg==}
     dependencies:
-      '@types/node': 18.18.0
+      '@types/node': 18.18.1
     dev: true
 
   /@types/yargs-parser@21.0.0:
@@ -980,7 +980,7 @@ packages:
     resolution: {integrity: sha512-Cn6WYCm0tXv8p6k+A8PvbDG763EDpBoTzHdA+Q/MF6H3sapGjCm9NzoaJncJS9tUKSuCoDs9XHxYYsQDgxR6kw==}
     requiresBuild: true
     dependencies:
-      '@types/node': 18.18.0
+      '@types/node': 18.18.1
     dev: true
     optional: true
 
@@ -1383,12 +1383,12 @@ packages:
       '@types/node': 20.4.1
     dev: true
 
-  /@wdio/reporter@8.16.12:
-    resolution: {integrity: sha512-zUH3/7dQhqX9qeahq/qnUFVVy6L30mRoYwVliH2tTHDUcvbj5BOKs6vREPF99YGp3Dq2BEwbvQ8mVzkXKHBPzg==}
+  /@wdio/reporter@8.16.17:
+    resolution: {integrity: sha512-c7B4dnOhCM9qCn/0vlV0IjCTL/Dv++MNOMtZFTQlEEo5qXSX+LNkpsZi0STnkPqnv6ZP7liwz4bA01MFksGaww==}
     engines: {node: ^16.13 || >=18}
     dependencies:
       '@types/node': 20.4.1
-      '@wdio/logger': 8.11.0
+      '@wdio/logger': 8.16.17
       '@wdio/types': 8.16.12
       diff: 5.1.0
       object-inspect: 1.12.3
@@ -1418,11 +1418,11 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@wdio/spec-reporter@8.16.12:
-    resolution: {integrity: sha512-OcDgiRiiOGIRru9EtWJsEQsn5luFDCXPM5NUYvbjEovCYSMR4EluARmqj27NBHFOC6jpUs8+FTpk06LR6uqgnA==}
+  /@wdio/spec-reporter@8.16.17:
+    resolution: {integrity: sha512-CBpZhTJASDWpxJBUK5TLBZKBWbZxsVctpqXjpjG9fl9+IXBG00P5oFecDa90aUa00Dq+eIE1UUsVJa7evd36Tg==}
     engines: {node: ^16.13 || >=18}
     dependencies:
-      '@wdio/reporter': 8.16.12
+      '@wdio/reporter': 8.16.17
       '@wdio/types': 8.16.12
       chalk: 5.3.0
       easy-table: 1.2.0
@@ -2834,7 +2834,7 @@ packages:
     requiresBuild: true
     dependencies:
       '@jest/expect-utils': 29.6.1
-      '@types/node': 18.18.0
+      '@types/node': 18.18.1
       jest-get-type: 29.4.3
       jest-matcher-utils: 29.6.1
       jest-message-util: 29.6.1
@@ -3969,7 +3969,7 @@ packages:
     requiresBuild: true
     dependencies:
       '@jest/types': 29.6.1
-      '@types/node': 18.18.0
+      '@types/node': 18.18.1
       chalk: 4.1.2
       ci-info: 3.8.0
       graceful-fs: 4.2.11
@@ -5835,7 +5835,7 @@ packages:
       typescript: 5.2.2
     dev: true
 
-  /ts-node@10.9.1(@types/node@18.18.0)(typescript@5.2.2):
+  /ts-node@10.9.1(@types/node@18.18.1)(typescript@5.2.2):
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
     hasBin: true
     peerDependencies:
@@ -5854,7 +5854,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      '@types/node': 18.18.0
+      '@types/node': 18.18.1
       acorn: 8.8.2
       acorn-walk: 8.2.0
       arg: 4.1.3
@@ -6025,7 +6025,7 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite-node@0.34.6(@types/node@18.18.0):
+  /vite-node@0.34.6(@types/node@18.18.1):
     resolution: {integrity: sha512-nlBMJ9x6n7/Amaz6F3zJ97EBwR2FkzhBRxF5e+jE6LA3yi6Wtc2lyTij1OnDMIr34v5g/tVQtsVAzhT0jc5ygA==}
     engines: {node: '>=v14.18.0'}
     hasBin: true
@@ -6035,7 +6035,7 @@ packages:
       mlly: 1.4.0
       pathe: 1.1.1
       picocolors: 1.0.0
-      vite: 4.3.8(@types/node@18.18.0)
+      vite: 4.3.8(@types/node@18.18.1)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -6046,7 +6046,7 @@ packages:
       - terser
     dev: true
 
-  /vite@4.3.8(@types/node@18.18.0):
+  /vite@4.3.8(@types/node@18.18.1):
     resolution: {integrity: sha512-uYB8PwN7hbMrf4j1xzGDk/lqjsZvCDbt/JC5dyfxc19Pg8kRm14LinK/uq+HSLNswZEoKmweGdtpbnxRtrAXiQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -6071,7 +6071,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 18.18.0
+      '@types/node': 18.18.1
       esbuild: 0.17.19
       postcss: 8.4.23
       rollup: 3.22.0
@@ -6112,7 +6112,7 @@ packages:
     dependencies:
       '@types/chai': 4.3.5
       '@types/chai-subset': 1.3.3
-      '@types/node': 18.18.0
+      '@types/node': 18.18.1
       '@vitest/expect': 0.34.6
       '@vitest/runner': 0.34.6
       '@vitest/snapshot': 0.34.6
@@ -6131,8 +6131,8 @@ packages:
       strip-literal: 1.0.1
       tinybench: 2.5.0
       tinypool: 0.7.0
-      vite: 4.3.8(@types/node@18.18.0)
-      vite-node: 0.34.6(@types/node@18.18.0)
+      vite: 4.3.8(@types/node@18.18.1)
+      vite-node: 0.34.6(@types/node@18.18.1)
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
       - less
