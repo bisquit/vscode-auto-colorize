@@ -61,13 +61,13 @@ importers:
   e2e:
     devDependencies:
       '@wdio/cli':
-        specifier: ^8.16.19
+        specifier: ^8.16.20
         version: 8.16.20(typescript@5.2.2)
       '@wdio/globals':
-        specifier: ^8.16.19
+        specifier: ^8.16.20
         version: 8.16.20(typescript@5.2.2)
       '@wdio/local-runner':
-        specifier: ^8.16.19
+        specifier: ^8.16.20
         version: 8.16.20(typescript@5.2.2)
       '@wdio/mocha-framework':
         specifier: ^8.16.17
