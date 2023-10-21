@@ -22,8 +22,8 @@ importers:
         specifier: ^18.18.6
         version: 18.18.6
       '@types/tinycolor2':
-        specifier: ^1.4.4
-        version: 1.4.4
+        specifier: ^1.4.5
+        version: 1.4.5
       '@types/vscode':
         specifier: 1.80.0
         version: 1.80.0
@@ -945,8 +945,8 @@ packages:
     requiresBuild: true
     dev: true
 
-  /@types/tinycolor2@1.4.4:
-    resolution: {integrity: sha512-FYK4mlLxUUajo/mblv7EUDHku20qT6ThYNsGZsTHilcHRvIkF8WXqtZO+DVTYkpHWCaAT97LueV59H/5Ve3bGA==}
+  /@types/tinycolor2@1.4.5:
+    resolution: {integrity: sha512-uLJijDHN5E6j5n1qefF9oaeplgszXglWXWTviMoFr/YxgvbyrkFil20yDT7ljhCiTQ/BfCYtxfJS81LdTro5DQ==}
     dev: true
 
   /@types/vscode@1.80.0:
