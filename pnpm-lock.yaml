@@ -16,8 +16,8 @@ importers:
         version: 1.6.0
     devDependencies:
       '@types/color-hash':
-        specifier: ^1.0.3
-        version: 1.0.3
+        specifier: ^1.0.4
+        version: 1.0.4
       '@types/node':
         specifier: ^18.18.8
         version: 18.18.8
@@ -877,8 +877,8 @@ packages:
     resolution: {integrity: sha512-mEo1sAde+UCE6b2hxn332f1g1E8WfYRu6p5SvTKr2ZKC1f7gFJXk4h5PyGP9Dt6gCaG8y8XhwnXWC6Iy2cmBng==}
     dev: true
 
-  /@types/color-hash@1.0.3:
-    resolution: {integrity: sha512-UkGu7j1RvcsjhYOIrzIRZygS4MBiIzTXBS6+RFNkw6XU/F6nLlTgR4QAOmjepRY0pJa+i6SXaf5sAU5rzy0xrw==}
+  /@types/color-hash@1.0.4:
+    resolution: {integrity: sha512-lRHjA675rw+lN4Zf+EXpV42wUA0YPUXdk7ECEhgljovbw5dPiHLrDwCpZmczWSrPDXFpyA78mmkY9I/PXAZDPw==}
     dev: true
 
   /@types/http-cache-semantics@4.0.1:
