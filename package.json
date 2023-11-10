@@ -44,7 +44,7 @@
     "vsce:publish": "pnpm vsce publish --no-dependencies"
   },
   "devDependencies": {
-    "@types/color-hash": "^1.0.3",
+    "@types/color-hash": "^1.0.4",
     "@types/node": "^18.18.8",
     "@types/tinycolor2": "^1.4.5",
     "@types/vscode": "1.80.0",
