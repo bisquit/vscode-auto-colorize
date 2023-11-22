@@ -45,7 +45,7 @@
   },
   "devDependencies": {
     "@types/color-hash": "^1.0.4",
-    "@types/node": "^18.18.9",
+    "@types/node": "^18.18.10",
     "@types/tinycolor2": "^1.4.6",
     "@types/vscode": "1.80.0",
     "@typescript-eslint/eslint-plugin": "^6.11.0",
