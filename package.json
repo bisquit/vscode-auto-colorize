@@ -44,14 +44,14 @@
     "vsce:publish": "pnpm vsce publish --no-dependencies"
   },
   "devDependencies": {
-    "@types/color-hash": "^1.0.4",
-    "@types/node": "^18.18.10",
+    "@types/color-hash": "^1.0.5",
+    "@types/node": "^18.18.11",
     "@types/tinycolor2": "^1.4.6",
     "@types/vscode": "1.80.0",
     "@typescript-eslint/eslint-plugin": "^6.12.0",
     "@typescript-eslint/parser": "^6.12.0",
     "@vitest/coverage-v8": "^0.34.6",
-    "esbuild": "^0.19.6",
+    "esbuild": "^0.19.7",
     "eslint": "^8.54.0",
     "eslint-plugin-perfectionist": "^1.5.1",
     "prettier": "^3.1.0",
