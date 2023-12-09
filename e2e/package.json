@@ -12,7 +12,7 @@
     "@wdio/types": "^8.24.12",
     "chromedriver": "^115.0.1",
     "ts-node": "^10.9.1",
-    "typescript": "^5.3.2",
+    "typescript": "^5.3.3",
     "wdio-vscode-service": "^5.2.2"
   }
 }
