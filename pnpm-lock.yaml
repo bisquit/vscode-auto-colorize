@@ -61,22 +61,22 @@ importers:
   e2e:
     devDependencies:
       '@wdio/cli':
-        specifier: ^8.28.4
+        specifier: ^8.28.6
         version: 8.28.8(typescript@5.3.3)
       '@wdio/globals':
-        specifier: ^8.28.4
+        specifier: ^8.28.6
         version: 8.28.8(typescript@5.3.3)
       '@wdio/local-runner':
-        specifier: ^8.28.4
+        specifier: ^8.28.7
         version: 8.28.8(typescript@5.3.3)
       '@wdio/mocha-framework':
-        specifier: ^8.28.0
+        specifier: ^8.28.6
         version: 8.28.8
       '@wdio/spec-reporter':
-        specifier: ^8.28.0
+        specifier: ^8.28.6
         version: 8.28.8
       '@wdio/types':
-        specifier: ^8.28.0
+        specifier: ^8.28.6
         version: 8.28.6
       chromedriver:
         specifier: ^115.0.1
