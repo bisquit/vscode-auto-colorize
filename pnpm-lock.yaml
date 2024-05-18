@@ -37,7 +37,7 @@ importers:
         specifier: ^0.34.6
         version: 0.34.6(vitest@0.34.6)
       esbuild:
-        specifier: ^0.21.2
+        specifier: ^0.21.3
         version: 0.21.3
       eslint:
         specifier: ^8.57.0
