@@ -19,7 +19,7 @@ importers:
         specifier: ^1.0.5
         version: 1.0.5
       '@types/node':
-        specifier: ^18.19.38
+        specifier: ^18.19.39
         version: 18.19.39
       '@types/tinycolor2':
         specifier: ^1.4.6
