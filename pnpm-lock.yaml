@@ -49,8 +49,8 @@ importers:
         specifier: ^3.3.2
         version: 3.3.2
       rimraf:
-        specifier: ^5.0.7
-        version: 5.0.7
+        specifier: ^5.0.8
+        version: 5.0.9
       typescript:
         specifier: ^5.5.3
         version: 5.5.3
@@ -89,7 +89,7 @@ importers:
         version: 5.5.3
       wdio-vscode-service:
         specifier: ^5.2.3
-        version: 5.2.3(@wdio/types@8.39.0)(chromedriver@115.0.1)(webdriverio@8.39.0)
+        version: 5.2.3(@wdio/types@8.39.0)(chromedriver@115.0.1)(webdriverio@8.39.1)
 
 packages:
 
@@ -5225,9 +5225,9 @@ packages:
       glob: 7.2.3
     dev: true
 
-  /rimraf@5.0.7:
-    resolution: {integrity: sha512-nV6YcJo5wbLW77m+8KjH8aB/7/rxQy9SZ0HY5shnwULfS+9nmTtVXAJET5NdZmCzA4fPI/Hm1wo/Po/4mopOdg==}
-    engines: {node: '>=14.18'}
+  /rimraf@5.0.9:
+    resolution: {integrity: sha512-3i7b8OcswU6CpU8Ej89quJD4O98id7TtVM5U4Mybh84zQXdrFmDLouWBEEaD/QfO3gDDfH+AGFCGsR7kngzQnA==}
+    engines: {node: 14 >=14.20 || 16 >=16.20 || >=18}
     hasBin: true
     dependencies:
       glob: 10.3.10
@@ -6109,7 +6109,7 @@ packages:
       defaults: 1.0.4
     dev: true
 
-  /wdio-chromedriver-service@8.1.1(@wdio/types@8.39.0)(chromedriver@115.0.1)(webdriverio@8.39.0):
+  /wdio-chromedriver-service@8.1.1(@wdio/types@8.39.0)(chromedriver@115.0.1)(webdriverio@8.39.1):
     resolution: {integrity: sha512-pN3GiOkTIMnalfq4PJAHdX95pDp1orHnTY8W1fIbd6ok81ba97UjerTgS7lUDRUh1p0MAm35Ww0uc0/9wzB7SA==}
     engines: {node: ^16.13 || >=18}
     peerDependencies:
@@ -6128,12 +6128,12 @@ packages:
       fs-extra: 11.1.1
       split2: 4.2.0
       tcp-port-used: 1.0.2
-      webdriverio: 8.39.0(typescript@5.5.3)
+      webdriverio: 8.39.1(typescript@5.5.3)
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /wdio-vscode-service@5.2.3(@wdio/types@8.39.0)(chromedriver@115.0.1)(webdriverio@8.39.0):
+  /wdio-vscode-service@5.2.3(@wdio/types@8.39.0)(chromedriver@115.0.1)(webdriverio@8.39.1):
     resolution: {integrity: sha512-8CcvVKzNAch4u9y57ZDbTbCCXzNNM5iCLW7NI2KmftpJb2n0uynf+EfcSS7719nVLKbtUPQqmyDwBpBCY5yDfA==}
     engines: {node: ^16.13 || >=18}
     peerDependencies:
@@ -6159,8 +6159,8 @@ packages:
       tmp-promise: 3.0.3
       undici: 5.28.2
       vscode-uri: 3.0.8
-      wdio-chromedriver-service: 8.1.1(@wdio/types@8.39.0)(chromedriver@115.0.1)(webdriverio@8.39.0)
-      webdriverio: 8.39.0(typescript@5.5.3)
+      wdio-chromedriver-service: 8.1.1(@wdio/types@8.39.0)(chromedriver@115.0.1)(webdriverio@8.39.1)
+      webdriverio: 8.39.1(typescript@5.5.3)
       ws: 8.16.0
       yargs-parser: 21.1.1
     transitivePeerDependencies:
@@ -6193,48 +6193,6 @@ packages:
     transitivePeerDependencies:
       - bufferutil
       - supports-color
-      - utf-8-validate
-    dev: true
-
-  /webdriverio@8.39.0(typescript@5.5.3):
-    resolution: {integrity: sha512-pDpGu0V+TL1LkXPode67m3s+IPto4TcmcOzMpzFgu2oeLMBornoLN3yQSFR1fjZd1gK4UfnG3lJ4poTGOfbWfw==}
-    engines: {node: ^16.13 || >=18}
-    peerDependencies:
-      devtools: ^8.14.0
-    peerDependenciesMeta:
-      devtools:
-        optional: true
-    dependencies:
-      '@types/node': 20.11.29
-      '@wdio/config': 8.39.0
-      '@wdio/logger': 8.38.0
-      '@wdio/protocols': 8.38.0
-      '@wdio/repl': 8.24.12
-      '@wdio/types': 8.39.0
-      '@wdio/utils': 8.39.0
-      archiver: 7.0.1
-      aria-query: 5.3.0
-      css-shorthand-properties: 1.1.1
-      css-value: 0.0.1
-      devtools-protocol: 0.0.1302984
-      grapheme-splitter: 1.0.4
-      import-meta-resolve: 4.0.0
-      is-plain-obj: 4.1.0
-      jszip: 3.10.1
-      lodash.clonedeep: 4.5.0
-      lodash.zip: 4.2.0
-      minimatch: 9.0.3
-      puppeteer-core: 20.9.0(typescript@5.5.3)
-      query-selector-shadow-dom: 1.0.1
-      resq: 1.11.0
-      rgb2hex: 0.2.5
-      serialize-error: 11.0.2
-      webdriver: 8.39.0
-    transitivePeerDependencies:
-      - bufferutil
-      - encoding
-      - supports-color
-      - typescript
       - utf-8-validate
     dev: true
 
