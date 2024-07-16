@@ -53,7 +53,7 @@
     "@vitest/coverage-v8": "^0.34.6",
     "esbuild": "^0.23.0",
     "eslint": "^8.57.0",
-    "eslint-plugin-perfectionist": "^1.5.1",
+    "eslint-plugin-perfectionist": "^2.11.0",
     "prettier": "^3.3.3",
     "rimraf": "^5.0.9",
     "typescript": "^5.5.3",
