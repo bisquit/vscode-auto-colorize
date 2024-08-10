@@ -61,16 +61,16 @@ importers:
   e2e:
     devDependencies:
       '@wdio/cli':
-        specifier: ^8.40.0
+        specifier: ^8.40.2
         version: 8.40.2
       '@wdio/globals':
-        specifier: ^8.40.0
+        specifier: ^8.40.2
         version: 8.40.2
       '@wdio/local-runner':
-        specifier: ^8.40.1
+        specifier: ^8.40.2
         version: 8.40.2
       '@wdio/mocha-framework':
-        specifier: ^8.40.0
+        specifier: ^8.40.2
         version: 8.40.2
       '@wdio/spec-reporter':
         specifier: ^8.39.0
@@ -802,22 +802,6 @@ packages:
     dev: true
     optional: true
 
-  /@puppeteer/browsers@1.7.1:
-    resolution: {integrity: sha512-nIb8SOBgDEMFY2iS2MdnUZOg2ikcYchRrBoF+wtdjieRFKR2uGRipHY/oFLo+2N6anDualyClPzGywTHRGrLfw==}
-    engines: {node: '>=16.3.0'}
-    hasBin: true
-    dependencies:
-      debug: 4.3.4(supports-color@8.1.1)
-      extract-zip: 2.0.1
-      progress: 2.0.3
-      proxy-agent: 6.3.1
-      tar-fs: 3.0.4
-      unbzip2-stream: 1.4.3
-      yargs: 17.7.1
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
   /@puppeteer/browsers@1.9.1:
     resolution: {integrity: sha512-PuvK6xZzGhKPvlx3fpfdM2kYY3P/hB1URtK8wA7XUJ6prn6pp22zvJHu48th0SGcHL9SutbPHrFuQgfXTFobWA==}
     engines: {node: '>=16.3.0'}
@@ -1263,8 +1247,8 @@ packages:
     resolution: {integrity: sha512-swmktcviVVPYx9U4SEQXLV6AEY51Y6bZ14jA2yo6TgMxQ3h+ZYiO0YhAHGJNp0ohCFbPAis1R9kK0cvN6lDPQA==}
     requiresBuild: true
     dependencies:
-      magic-string: 0.30.5
-      pathe: 1.1.1
+      magic-string: 0.30.11
+      pathe: 1.1.2
       pretty-format: 29.7.0
     dev: true
 
@@ -1489,7 +1473,7 @@ packages:
     resolution: {integrity: sha512-leYcCUSaAdLUCVKqRKNgMCASPOUo/VvOTKETiZ/qpdY2azCBt/KnLugtiycCzakeYg6Kp+VIjx5fkm0M7y4qhA==}
     engines: {node: ^16.13 || >=18}
     dependencies:
-      '@puppeteer/browsers': 1.7.1
+      '@puppeteer/browsers': 1.9.1
       '@wdio/logger': 8.38.0
       '@wdio/types': 8.39.0
       decamelize: 6.0.0
@@ -4426,7 +4410,7 @@ packages:
     resolution: {integrity: sha512-ua8PAThnTwpprIaU47EPeZ/bPUVp2QYBbWMphUQpVdBI3Lgqzm5KZQ45Agm3YJedHXaIHl6pBGabaLSUPPSptg==}
     dependencies:
       acorn: 8.10.0
-      pathe: 1.1.1
+      pathe: 1.1.2
       pkg-types: 1.0.3
       ufo: 1.1.2
     dev: true
@@ -4888,7 +4872,7 @@ packages:
     dependencies:
       jsonc-parser: 3.2.0
       mlly: 1.4.0
-      pathe: 1.1.1
+      pathe: 1.1.2
     dev: true
 
   /postcss@8.4.23:
@@ -6374,20 +6358,6 @@ packages:
       string-width: 4.2.3
       y18n: 5.0.8
       yargs-parser: 20.2.4
-    dev: true
-
-  /yargs@17.7.1:
-    resolution: {integrity: sha512-cwiTb08Xuv5fqF4AovYacTFNxk62th7LKJ6BL9IGUpTJrWoU7/7WdQGTP2SjKf1dUNBGzDd28p/Yfs/GI6JrLw==}
-    engines: {node: '>=12'}
-    requiresBuild: true
-    dependencies:
-      cliui: 8.0.1
-      escalade: 3.1.1
-      get-caller-file: 2.0.5
-      require-directory: 2.1.1
-      string-width: 4.2.3
-      y18n: 5.0.8
-      yargs-parser: 21.1.1
     dev: true
 
   /yargs@17.7.2:
