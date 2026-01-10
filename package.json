@@ -40,8 +40,9 @@
     "test:coverage": "vitest --coverage.enabled --coverage.provider=v8 --coverage.all --coverage.clean --coverage.include=src/utils",
     "test:ci": "pnpm run test:coverage --run",
     "e2e": "pnpm --filter e2e wdio",
-    "vsce:package": "pnpm vsce package --no-dependencies",
-    "vsce:publish": "pnpm vsce publish --no-dependencies"
+    "vsce:package": "vsce package",
+    "vsce:publish": "vsce publish",
+    "ovsx:publish": "ovsx publish"
   },
   "devDependencies": {
     "@types/color-hash": "^1.0.5",
@@ -57,6 +58,8 @@
     "prettier": "^3.7.4",
     "rimraf": "^5.0.10",
     "typescript": "^5.9.3",
+    "@vscode/vsce": "^3.0.0",
+    "ovsx": "^0.10.0",
     "vitest": "^0.34.6"
   },
   "dependencies": {

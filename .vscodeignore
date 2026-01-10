@@ -1,4 +1,4 @@
 .gitignore
 .vscode
-node_modeuls
+node_modules
 src/
