@@ -41,7 +41,8 @@
     "test:ci": "pnpm run test:coverage --run",
     "e2e": "pnpm --filter e2e wdio",
     "vsce:package": "pnpm vsce package --no-dependencies",
-    "vsce:publish": "pnpm vsce publish --no-dependencies"
+    "vsce:publish": "pnpm vsce publish --no-dependencies",
+    "ovsx:publish": "pnpm ovsx publish *.vsix"
   },
   "devDependencies": {
     "@types/color-hash": "^1.0.5",

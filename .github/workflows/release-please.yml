@@ -39,15 +39,21 @@ jobs:
       - name: install
         run: pnpm i
 
-      - name: install vsce
-        run: pnpm add -g @vscode/vsce
+      - name: install vsce and ovsx
+        run: pnpm add -g @vscode/vsce ovsx
 
       - name: build
         run: pnpm run build
 
-      - name: publish
-        run: |
-          pnpm run vsce:package
-          pnpm run vsce:publish
+      - name: package
+        run: pnpm run vsce:package
+
+      - name: publish to VS Code Marketplace
+        run: pnpm run vsce:publish
         env:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
+
+      - name: publish to Open VSX
+        run: pnpm run ovsx:publish
+        env:
+          OVSX_PAT: ${{ secrets.OVSX_PAT }}
