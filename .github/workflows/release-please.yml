@@ -39,8 +39,8 @@ jobs:
       - name: install
         run: pnpm i
 
-      - name: install vsce and ovsx
-        run: pnpm add -g @vscode/vsce ovsx
+      - name: install vsce
+        run: pnpm add -g @vscode/vsce
 
       - name: build
         run: pnpm run build

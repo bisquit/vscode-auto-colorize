@@ -42,7 +42,7 @@
     "e2e": "pnpm --filter e2e wdio",
     "vsce:package": "pnpm vsce package --no-dependencies",
     "vsce:publish": "pnpm vsce publish --no-dependencies",
-    "ovsx:publish": "pnpm ovsx publish *.vsix"
+    "ovsx:publish": "ovsx publish"
   },
   "devDependencies": {
     "@types/color-hash": "^1.0.5",
@@ -58,6 +58,7 @@
     "prettier": "^3.7.4",
     "rimraf": "^5.0.10",
     "typescript": "^5.9.3",
+    "ovsx": "^0.10.0",
     "vitest": "^0.34.6"
   },
   "dependencies": {
