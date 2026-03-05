@@ -45,7 +45,7 @@
     "ovsx:publish": "ovsx publish --no-dependencies"
   },
   "devDependencies": {
-    "@types/color-hash": "^1.0.5",
+    "@types/color-hash": "^2.0.0",
     "@types/node": "^18.19.130",
     "@types/tinycolor2": "^1.4.6",
     "@types/vscode": "1.80.0",
