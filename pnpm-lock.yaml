@@ -16,8 +16,8 @@ importers:
         version: 1.6.0
     devDependencies:
       '@types/color-hash':
-        specifier: ^1.0.5
-        version: 1.0.5
+        specifier: ^2.0.0
+        version: 2.0.0
       '@types/node':
         specifier: ^18.19.130
         version: 18.19.130
@@ -950,8 +950,8 @@ packages:
   '@types/chai@4.3.20':
     resolution: {integrity: sha512-/pC9HAB5I/xMlc5FP77qjCnI16ChlJfW0tGa0IUcFn38VJrTV6DeZ60NU5KZBtaOZqjdpwTWohz5HU1RrhiYxQ==}
 
-  '@types/color-hash@1.0.5':
-    resolution: {integrity: sha512-miV7Z8zvOnRn0ZjbP/D/qb1VWHrWkKOnfC764SJvnCeIziW4pZy3tPK/542seSgccGAXlPQd/seuNyVAS/p5Ug==}
+  '@types/color-hash@2.0.0':
+    resolution: {integrity: sha512-wVZU2AthjkuxcK8IQl2lpVzWZxu/nuOoQfEBv0cxsbV8mVlCiPExNaw9/Z1PBC0ostupYr8KbTmT2J4+qrOW7w==}
 
   '@types/estree@1.0.8':
     resolution: {integrity: sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==}
@@ -5281,7 +5281,7 @@ snapshots:
 
   '@types/chai@4.3.20': {}
 
-  '@types/color-hash@1.0.5': {}
+  '@types/color-hash@2.0.0': {}
 
   '@types/estree@1.0.8': {}
 
