@@ -59,7 +59,7 @@
     "rimraf": "^5.0.10",
     "typescript": "^5.9.3",
     "@vscode/vsce": "^3.7.1",
-    "ovsx": "^0.10.9",
+    "ovsx": "^0.10.10",
     "vitest": "^0.34.6"
   },
   "dependencies": {

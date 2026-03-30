@@ -49,7 +49,7 @@ importers:
         specifier: ^1.5.1
         version: 1.5.1(eslint@8.57.1)(typescript@5.9.3)
       ovsx:
-        specifier: ^0.10.9
+        specifier: ^0.10.10
         version: 0.10.10
       prettier:
         specifier: ^3.8.1
