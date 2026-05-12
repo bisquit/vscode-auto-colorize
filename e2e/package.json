@@ -13,6 +13,6 @@
     "chromedriver": "^115.0.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3",
-    "wdio-vscode-service": "^5.2.3"
+    "wdio-vscode-service": "^6.1.4"
   }
 }
