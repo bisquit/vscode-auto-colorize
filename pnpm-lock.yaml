@@ -85,8 +85,8 @@ importers:
         specifier: ^8.41.0
         version: 8.41.0
       chromedriver:
-        specifier: ^115.0.1
-        version: 115.0.1(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1)
+        specifier: ^119.0.0
+        version: 119.0.1(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1)
       ts-node:
         specifier: ^10.9.2
         version: 10.9.2(@types/node@18.19.130)(typescript@5.9.3)
@@ -95,7 +95,7 @@ importers:
         version: 5.9.3
       wdio-vscode-service:
         specifier: ^5.2.3
-        version: 5.2.3(@wdio/types@8.41.0)(chromedriver@115.0.1(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1))(supports-color@8.1.1)(webdriverio@8.46.0(supports-color@8.1.1))
+        version: 5.2.3(@wdio/types@8.41.0)(chromedriver@119.0.1(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1))(supports-color@8.1.1)(webdriverio@8.46.0(supports-color@8.1.1))
 
 packages:
 
@@ -1628,9 +1628,9 @@ packages:
   chownr@1.1.4:
     resolution: {integrity: sha512-jJ0bqzaylmJtVnNgzTeSOs8DPavpbYgEr/b0YL8/2GO3xJEhInFmhKMUnEJQjZumK7KXGFhUy89PrsJWlakBVg==}
 
-  chromedriver@115.0.1:
-    resolution: {integrity: sha512-faE6WvIhXfhnoZ3nAxUXYzeDCKy612oPwpkUp0mVkA7fZPg2JHSUiYOQhUYgzHQgGvDWD5Fy2+M2xV55GKHBVQ==}
-    engines: {node: '>=16'}
+  chromedriver@119.0.1:
+    resolution: {integrity: sha512-lpCFFLaXPpvElTaUOWKdP74pFb/sJhWtWqMjn7Ju1YriWn8dT5JBk84BGXMPvZQs70WfCYWecxdMmwfIu1Mupg==}
+    engines: {node: '>=18'}
     hasBin: true
 
   chromium-bidi@0.5.8:
@@ -2301,15 +2301,6 @@ packages:
 
   flatted@3.3.3:
     resolution: {integrity: sha512-GX+ysw4PBCz0PzosHDepZGANEuFCMLrnRTiEy9McGjmkCQYwRq4A/X786G/fjM/+OjsWSU1ZrY5qyARZmO/uwg==}
-
-  follow-redirects@1.15.11:
-    resolution: {integrity: sha512-deG2P0JfjrTxl50XGCDyfI97ZGVCxIpfKYmfyrQ54n5FO/0gfIES8C/Psl6kWVDolizcaaxZJnTS0QSMxvnsBQ==}
-    engines: {node: '>=4.0'}
-    peerDependencies:
-      debug: '*'
-    peerDependenciesMeta:
-      debug:
-        optional: true
 
   follow-redirects@1.16.0:
     resolution: {integrity: sha512-y5rN/uOsadFT/JfYwhxRS5R7Qce+g3zG97+JrtFZlC9klX/W5hD7iiLzScI4nZqUS7DNUdhPgw4xI8W2LuXlUw==}
@@ -6017,7 +6008,7 @@ snapshots:
 
   axios@1.13.2(debug@4.4.3(supports-color@8.1.1)):
     dependencies:
-      follow-redirects: 1.15.11(debug@4.4.3(supports-color@8.1.1))
+      follow-redirects: 1.16.0(debug@4.4.3(supports-color@8.1.1))
       form-data: 4.0.5
       proxy-from-env: 1.1.0
     transitivePeerDependencies:
@@ -6271,7 +6262,7 @@ snapshots:
   chownr@1.1.4:
     optional: true
 
-  chromedriver@115.0.1(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1):
+  chromedriver@119.0.1(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1):
     dependencies:
       '@testim/chrome-version': 1.1.4
       axios: 1.13.2(debug@4.4.3(supports-color@8.1.1))
@@ -7072,10 +7063,6 @@ snapshots:
   flat@5.0.2: {}
 
   flatted@3.3.3: {}
-
-  follow-redirects@1.15.11(debug@4.4.3(supports-color@8.1.1)):
-    optionalDependencies:
-      debug: 4.4.3(supports-color@8.1.1)
 
   follow-redirects@1.16.0(debug@4.4.3(supports-color@8.1.1)):
     optionalDependencies:
@@ -9279,7 +9266,7 @@ snapshots:
     dependencies:
       defaults: 1.0.4
 
-  wdio-chromedriver-service@8.1.1(@wdio/types@8.41.0)(chromedriver@115.0.1(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1))(supports-color@8.1.1)(webdriverio@8.46.0(supports-color@8.1.1)):
+  wdio-chromedriver-service@8.1.1(@wdio/types@8.41.0)(chromedriver@119.0.1(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1))(supports-color@8.1.1)(webdriverio@8.46.0(supports-color@8.1.1)):
     dependencies:
       '@wdio/logger': 8.38.0
       fs-extra: 11.3.3
@@ -9288,18 +9275,18 @@ snapshots:
       webdriverio: 8.46.0(supports-color@8.1.1)
     optionalDependencies:
       '@wdio/types': 8.41.0
-      chromedriver: 115.0.1(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1)
+      chromedriver: 119.0.1(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
-  wdio-vscode-service@5.2.3(@wdio/types@8.41.0)(chromedriver@115.0.1(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1))(supports-color@8.1.1)(webdriverio@8.46.0(supports-color@8.1.1)):
+  wdio-vscode-service@5.2.3(@wdio/types@8.41.0)(chromedriver@119.0.1(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1))(supports-color@8.1.1)(webdriverio@8.46.0(supports-color@8.1.1)):
     dependencies:
       '@fastify/cors': 8.5.0
       '@fastify/static': 6.12.0
       '@types/ws': 8.18.1
       '@vscode/test-electron': 2.5.2(supports-color@8.1.1)
       '@wdio/logger': 8.38.0
-      chromedriver: 115.0.1(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1)
+      chromedriver: 119.0.1(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1)
       clipboardy: 3.0.0
       decamelize: 6.0.0
       download: 8.0.0
@@ -9310,7 +9297,7 @@ snapshots:
       tmp-promise: 3.0.3
       undici: 5.29.0
       vscode-uri: 3.1.0
-      wdio-chromedriver-service: 8.1.1(@wdio/types@8.41.0)(chromedriver@115.0.1(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1))(supports-color@8.1.1)(webdriverio@8.46.0(supports-color@8.1.1))
+      wdio-chromedriver-service: 8.1.1(@wdio/types@8.41.0)(chromedriver@119.0.1(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1))(supports-color@8.1.1)(webdriverio@8.46.0(supports-color@8.1.1))
       ws: 8.19.0
       yargs-parser: 21.1.1
     optionalDependencies:
