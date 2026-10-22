@@ -10,7 +10,7 @@
     "@wdio/mocha-framework": "^8.46.0",
     "@wdio/spec-reporter": "^8.43.0",
     "@wdio/types": "^8.41.0",
-    "chromedriver": "^115.0.1",
+    "chromedriver": "^119.0.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3",
     "wdio-vscode-service": "^5.2.3"
