@@ -57,7 +57,7 @@
     "eslint-plugin-perfectionist": "^1.5.1",
     "prettier": "^3.9.6",
     "rimraf": "^5.0.10",
-    "typescript": "^5.9.3",
+    "typescript": "^7.0.2",
     "@vscode/vsce": "^3.9.2",
     "ovsx": "^0.10.12",
     "vitest": "^0.34.6"
