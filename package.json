@@ -60,7 +60,7 @@
     "typescript": "^5.9.3",
     "@vscode/vsce": "^3.9.2",
     "ovsx": "^0.10.12",
-    "vitest": "^0.34.6"
+    "vitest": "^3.0.0"
   },
   "dependencies": {
     "color-hash": "^2.0.2",
